@@ -44,31 +44,13 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-
-
         </plugins>
-
-
-        <extensions>
-            <extension>
-                <groupId>io.packagecloud.maven.wagon</groupId>
-                <artifactId>maven-packagecloud-wagon</artifactId>
-                <version>0.0.6</version>
-            </extension>
-        </extensions>
-
     </build>
 
     <distributionManagement>
-        <repository>
-            <id>packagecloud.my_repo_releases</id>
-<!--            <url>packagecloud+http://packagecloud.dev:3000/testy/my_repo</url>-->
-            <url>packagecloud+https://packagecloud.io/art_shishkin/release</url>
-        </repository>
         <snapshotRepository>
-            <id>packagecloud.my_repo_snapshots</id>
-<!--            <url>packagecloud+http://packagecloud.dev:3000/testy/my_repo</url>-->
-            <url>packagecloud+https://packagecloud.io/art_shishkin/snapshot</url>
+            <id>nexus-snapshots</id>
+            <url>http://localhost:8081/repository/nexus-snapshot/</url>
         </snapshotRepository>
     </distributionManagement>
 
