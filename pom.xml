@@ -72,9 +72,19 @@
                     <url>packagecloud+https://packagecloud.io/art_shishkin/snapshot</url>
                 </snapshotRepository>
             </distributionManagement>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
+        </profile>
+        <profile>
+            <id>nexus</id>
+            <distributionManagement>
+                <repository>
+                    <id>nexus-releases</id>
+                    <url>http://localhost:8081/repository/nexus-releases/</url>
+                </repository>
+                <snapshotRepository>
+                    <id>nexus-snapshots</id>
+                    <url>http://localhost:8081/repository/nexus-snapshots/</url>
+                </snapshotRepository>
+            </distributionManagement>
         </profile>
     </profiles>
 </project>
