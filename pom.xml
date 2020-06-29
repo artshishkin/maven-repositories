@@ -13,7 +13,7 @@
 
     <groupId>org.artarkatesoft</groupId>
     <artifactId>maven-repositories</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <properties>
         <java.version>1.8</java.version>
@@ -49,9 +49,13 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>nexus-snapshots</id>
-            <url>http://localhost:8081/repository/nexus-snapshot/</url>
+            <id>nexus-local</id>
+            <url>http://localhost:8081/repository/nexus-snapshot</url>
         </snapshotRepository>
+        <repository>
+            <id>nexus-local</id>
+            <url>http://localhost:8081/repository/nexus-release</url>
+        </repository>
     </distributionManagement>
 
 </project>

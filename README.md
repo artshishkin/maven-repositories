@@ -38,5 +38,17 @@
 #14 Deploying Apache Maven Projects to Nexus
 
 ##145 Create Snapshot Repository
+
+##146 Assignment - Create Release Repository
+In `settings.xml` I set
+```xml
+<servers>
+    <server>
+        <id>nexus-local</id>
+        <username>admin</username>
+        <password>{t/XDXFaUrS8HvBN5ZEZWx2MGy1akWfGuYO1MCMyCegU=}</password>
+    </server>
+</servers>
+```
  
 
