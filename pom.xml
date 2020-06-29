@@ -44,8 +44,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-
-
         </plugins>
 
 
@@ -74,7 +72,7 @@
             </distributionManagement>
         </profile>
         <profile>
-            <id>nexus</id>
+            <id>nexus_distro</id>
             <distributionManagement>
                 <repository>
                     <id>nexus-releases</id>
