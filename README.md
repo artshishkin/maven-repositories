@@ -25,4 +25,6 @@ I added 2 `server`-s to `settings.xml` like so
 - `mvn help:active-profiles -P!packagecloud,nexus_distro`
 - `mvn clean deploy -P !packagecloud,nexus_distro` - deactivate one profile and activate another
 
+##156 Setting Properties in Profiles  
+- create simple test to use env variable
   
