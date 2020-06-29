@@ -59,17 +59,22 @@
 
     </build>
 
-    <distributionManagement>
-        <repository>
-            <id>packagecloud.my_repo_releases</id>
-<!--            <url>packagecloud+http://packagecloud.dev:3000/testy/my_repo</url>-->
-            <url>packagecloud+https://packagecloud.io/art_shishkin/release</url>
-        </repository>
-        <snapshotRepository>
-            <id>packagecloud.my_repo_snapshots</id>
-<!--            <url>packagecloud+http://packagecloud.dev:3000/testy/my_repo</url>-->
-            <url>packagecloud+https://packagecloud.io/art_shishkin/snapshot</url>
-        </snapshotRepository>
-    </distributionManagement>
-
+    <profiles>
+        <profile>
+            <id>packagecloud</id>
+            <distributionManagement>
+                <repository>
+                    <id>packagecloud.my_repo_releases</id>
+                    <url>packagecloud+https://packagecloud.io/art_shishkin/release</url>
+                </repository>
+                <snapshotRepository>
+                    <id>packagecloud.my_repo_snapshots</id>
+                    <url>packagecloud+https://packagecloud.io/art_shishkin/snapshot</url>
+                </snapshotRepository>
+            </distributionManagement>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
 </project>
