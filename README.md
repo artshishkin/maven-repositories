@@ -19,5 +19,12 @@
 - `https://docs.oracle.com/middleware/1213/core/MAVEN/config_maven_repo.htm#MAVEN9017`
 - `mvn --encrypt-password` - your oracle password
 - If using with wrong password in `settings.xml` we got an error `Could not transfer artifact com.oracle.jdbc:ojdbc8:pom:19.3.0.0 from/to maven.oracle.com (https://maven.oracle.com): Authentication failed for https://maven.oracle.com/com/oracle/jdbc/ojdbc8/19.3.0.0/ojdbc8-19.3.0.0.pom 401 Unauthorized`
+
+#13 Deploying Maven Projects to PackageCloud
+##135 PackageCloud Free Account
+- `https://packagecloud.io/users/new?plan=free_usage_plan`
+##137 PackageCloud Maven Configuration
+- [Packagecloud Maven Wagon](https://github.com/computology/maven-packagecloud-wagon)
+
  
 
