@@ -55,5 +55,18 @@ In `settings.xml` I set
 Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:2.8.2:deploy (default-deploy) on project maven-repositories: Failed to deploy artifacts: Could not transfer artifact org.artarkatesoft:maven-repositories:jar:1.0 from/to nexus-local (http://localhost:8081/repository/nexus-release): Failed to transfer file http://localhost:8081/repository/nexus-release/org/artarkatesoft/maven-repositories/1.0/maven-repositories-1.0.jar with status code 400
 ```
 
+##148 Nexus Repository Groups
+
+Created nexus group repository and added to `settings.xml` mirror
+```xml
+    <mirrors>
+        <mirror>
+            <id>central</id>
+            <name>Nexus Central</name>
+            <url>http://localhost:8081/repository/nexus-group/</url>
+            <mirrorOf>*</mirrorOf>
+        </mirror>
+    </mirrors>
+```
  
 
