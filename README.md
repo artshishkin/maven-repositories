@@ -16,4 +16,13 @@ I added 2 `server`-s to `settings.xml` like so
 ##154 Assignment review
 
 - setting Nexus group repo
-- adding to `settings.xml` mirror of this repo  
+- adding to `settings.xml` mirror of this repo
+
+##155 Maven Profile Command Line Usage 
+- `mvn help:active-profiles`
+- `mvn help:active-profiles -Ppackagecloud`
+- `mvn clean deploy -Pnexus_distro`
+- `mvn help:active-profiles -P!packagecloud,nexus_distro`
+- `mvn clean deploy -P !packagecloud,nexus_distro` - deactivate one profile and activate another
+
+  

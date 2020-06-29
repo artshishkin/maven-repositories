@@ -70,6 +70,9 @@
                     <url>packagecloud+https://packagecloud.io/art_shishkin/snapshot</url>
                 </snapshotRepository>
             </distributionManagement>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
         </profile>
         <profile>
             <id>nexus_distro</id>
