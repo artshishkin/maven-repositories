@@ -14,4 +14,10 @@
 - Remark: right `groupId` is `com.oracle.database.jdbc`
 ##130 Configure Maven Master Password
 - Follow the instructions `https://maven.apache.org/guides/mini/guide-encryption.html`
+- `mvn --encrypt-master-password` - your local maven master password (I just created it)
+##131 Configure Maven for Oracle Maven Repository
+- `https://docs.oracle.com/middleware/1213/core/MAVEN/config_maven_repo.htm#MAVEN9017`
+- `mvn --encrypt-password` - your oracle password
+- If using with wrong password in `settings.xml` we got an error `Could not transfer artifact com.oracle.jdbc:ojdbc8:pom:19.3.0.0 from/to maven.oracle.com (https://maven.oracle.com): Authentication failed for https://maven.oracle.com/com/oracle/jdbc/ojdbc8/19.3.0.0/ojdbc8-19.3.0.0.pom 401 Unauthorized`
+ 
 
