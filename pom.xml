@@ -17,6 +17,7 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <TEST_HOST>http://localhost:8080</TEST_HOST>
     </properties>
     <dependencies>
         <dependency>
@@ -50,7 +51,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <environmentVariables>
-                        <TEST_HOST>http://artarkatesoft.com</TEST_HOST>
+                        <TEST_HOST>${TEST_HOST}</TEST_HOST>
                     </environmentVariables>
                 </configuration>
             </plugin>
@@ -97,6 +98,25 @@
                     <url>http://localhost:8081/repository/nexus-snapshots/</url>
                 </snapshotRepository>
             </distributionManagement>
+        </profile>
+
+        <profile>
+            <id>test</id>
+            <properties>
+                <TEST_HOST>http://artarkatesoft.com</TEST_HOST>
+            </properties>
+        </profile>
+        <profile>
+            <id>uat</id>
+            <properties>
+                <TEST_HOST>http://uat.artarkatesoft.com</TEST_HOST>
+            </properties>
+        </profile>
+        <profile>
+            <id>qa</id>
+            <properties>
+                <TEST_HOST>http://qa.artarkatesoft.com</TEST_HOST>
+            </properties>
         </profile>
     </profiles>
 </project>

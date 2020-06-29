@@ -27,4 +27,7 @@ I added 2 `server`-s to `settings.xml` like so
 
 ##156 Setting Properties in Profiles  
 - create simple test to use env variable
+- create profile `test`
+- `mvn clean test -Ptest`
+- `mvn clean test`
   
