@@ -12,5 +12,6 @@
 - Run `mvn install:install-file -Dfile=ojdbc8.jar -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=19.7.0.0 -Dpackaging=jar`
 - It will install in `<userDir>/.m2/repository/com/oracle/ojdbc8/19.7.0.0/` 
 - Remark: right `groupId` is `com.oracle.database.jdbc`
- 
+##130 Configure Maven Master Password
+- Follow the instructions `https://maven.apache.org/guides/mini/guide-encryption.html`
 
